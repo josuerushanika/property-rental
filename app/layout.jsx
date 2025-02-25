@@ -1,6 +1,5 @@
 import React from "react";
-import "@/assets/styles/globals.css"
-import { title } from "process";
+import "../assets/styles/globals.css"
 
 export const metadata = {
   title: "PropertyPulse | Find the Perfect Rental",
@@ -10,11 +9,11 @@ export const metadata = {
 
 const MainLayout = ({ children }) => {
   return (
-  <html lang="en">
-    <body>
-      <div>{children}</div>
-    </body>
-  </html>
+    <html lang="en">
+      <body>
+        <div>{children}</div>
+      </body>
+    </html>
   )
 };
 
