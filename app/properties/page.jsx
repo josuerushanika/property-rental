@@ -1,15 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
+import properties from "@/properties.json";
 
 const PropertiesPage = () => {
-  return (
-    <div>
-      <div>
-        <h1 className="text-3xl">Properties</h1>
-      </div>
-      <Link href="/"> Go Home </Link>
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default PropertiesPage
+export default PropertiesPage;
