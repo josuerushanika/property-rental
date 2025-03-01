@@ -1,4 +1,5 @@
-import properties from "./properties.json";
+import properties from "../../properties.json";
+import PropertyCard from "../../components/PropertyCard";
 
 const PropertiesPage = () => {
   return (
@@ -10,7 +11,7 @@ const PropertiesPage = () => {
           ) : (
             <div className="container-xl lg:container m-auto px-4 py-6">
               {properties.map((property) => (
-                <div> {property.name}</div>
+                <PropertyCard key={property._id} property={property} />
               ))}
             </div>
           )}
