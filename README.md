@@ -2,7 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-<!-- Left coding 14-->
+<!-- Left coding 18-->
+<!-- database password username brad123  password brad123 -->
 
 First, run the development server:
 
