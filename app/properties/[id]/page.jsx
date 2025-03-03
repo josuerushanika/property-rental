@@ -1,9 +1,10 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { fetchProperty } from "../../../utils/requests";
 import PropertyHeaderImage from "../../../components/PropertyHeaderImage";
-import Link from "next/link";
+import PropertyDetails from "../../../components/PropertyDetails";
 
 const PropertyPage = () => {
   const { id } = useParams();
@@ -55,6 +56,7 @@ const PropertyPage = () => {
           </Link>
         </div>
       </section>
+      <PropertyDetails property={property} />
     </>
   );
 };
