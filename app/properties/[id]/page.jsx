@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { fetchProperty } from "../../../utils/requests";
 import PropertyHeaderImage from "../../../components/PropertyHeaderImage";
+import Link from "next/link";
 
 const PropertyPage = () => {
   const { id } = useParams();
@@ -39,10 +40,21 @@ const PropertyPage = () => {
   return (
     <>
       {!loading && property?.image?.length > 0 ? (
-        <PropertyHeaderImage image={property.image[0]} />
+        <PropertyHeaderImage image={property.images[0]} />
       ) : (
         !loading && <p>No image available</p>
       )}
+
+      <section>
+        <div>
+          <Link
+            href="/properties"
+            className="text-blue-500 hover:text-blue-600 flex items-center"
+          >
+            <i className="fas fa-arrow-left mr-2"></i> Back to Properties
+          </Link>
+        </div>
+      </section>
     </>
   );
 };
