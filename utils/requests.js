@@ -17,7 +17,6 @@ async function fetchProperties() {
       return []; // Return an empty array on error
     }
   }
-
   // Fetch single property
 
   async function fetchProperty(id) {
