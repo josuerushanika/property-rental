@@ -1,7 +1,5 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
-
 <!-- Left coding  27. 2minutes-->
 <!-- database password username brad123  password brad123 -->
 <!-- How to start mongodb-compass is **mongodb-compass** -->
